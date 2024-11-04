@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Home.css"
+import WeatherCard from '../../components/WeatherCard/WeatherCard'
 
 const weatherData = [
     {
