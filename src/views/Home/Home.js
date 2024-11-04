@@ -58,7 +58,18 @@ function Home() {
     <>
     <h1 className='weather-card-heading'>Weather Card</h1>
     <div className='weather-card-container'>
-       
+    {
+            weatherData.map((weatherObj,i)=>{
+                const {tempreature,city,weather}=weatherObj
+
+                return<WeatherCard
+                key={i}
+                tempature={tempreature}
+                city={city}
+                weather={weather}
+                />
+            })
+        }
 
     </div>
     </>
